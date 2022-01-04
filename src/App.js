@@ -1,10 +1,13 @@
-import logo from './logo.svg';
-import { NavDiv } from './components/Home.elements';
+import logo from './components/media/bookmyshow.png';
+import { NavDiv, NavInp } from './components/Home.elements';
 
 function App() {
   return (
     <div className="App">
-      <NavDiv>F </NavDiv>
+      <NavDiv> 
+        <img src={logo} height='100%' />
+        <NavInp/>
+      </NavDiv>
     </div>
   );
 }
