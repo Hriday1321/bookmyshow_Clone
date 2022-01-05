@@ -1,12 +1,13 @@
 import logo from './components/media/bookmyshow.png';
-import { NavDiv, NavInp } from './components/Home.elements';
+import { NavDiv, NavInp, NavBut } from './components/Home.elements';
 
 function App() {
   return (
     <div className="App">
       <NavDiv> 
-        <img src={logo} height='100%' />
+        <img src={logo} />
         <NavInp/>
+        <NavBut>Sign In</NavBut>
       </NavDiv>
     </div>
   );
