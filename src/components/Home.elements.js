@@ -1,11 +1,12 @@
 import styled from "styled-components/macro";
 
 export const NavDiv = styled.div`
-  background: rgb(46, 49, 71);
+  background: rgb(51, 53, 69);
   color: white;
-  height: 40px;
+  height: 65px;
   display: flex;
   padding-left: 10%;
+  align-items: center;
 `;
 
 export const NavSubDiv = styled.div`
@@ -16,23 +17,40 @@ export const NavSubDiv = styled.div`
   padding-left: 10%;
 `;
 
+export const NavA = styled.a`
+  text-decoration: none;
+  color: rgb(204, 204, 195);
+  font-weight: 500;
+`;
+
 export const NavInp = styled.input`
   border-radius: 5px;
   border: none;
+  height: 50%;
+  width: 40%;
+  margin-left: 1%;
 `;
 
 export const NavBut = styled.button`
   background: rgb(248, 68, 100);
   color: white;
-  font-weight: 600;
+  font-weight: 500;
+  padding: 0.5% 1%;
   border: none;
   border-radius: 5px;
-  margin-left: 50%;
+  margin-left: 30%;
 `;
 
 export const NavSubBut = styled.button`
   background: none;
-  color: white;
-  font-weight: 400;
+  color: rgb(204, 204, 195);
+  font-weight: 500;
+  font-size: 0.9em;
+  margin-right: 0.8%;
   border: none;
+`;
+
+export const NavI = styled.img`
+  width: 9%;
+  padding-right: 1%;
 `;
