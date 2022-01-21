@@ -1,5 +1,4 @@
 import styled from "styled-components/macro";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const NavDiv = styled.div`
   background: rgb(51, 53, 69);
@@ -62,7 +61,4 @@ export const NavSubBut = styled.button`
   border: none;
 `;
 
-export const NavI = styled.img`
-  width: 9%;
-  padding-right: 1%;
-`;
+
