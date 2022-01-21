@@ -1,4 +1,5 @@
-import { NavDiv, NavSearchDiv, NavSubDiv, NavInp, NavBut, NavSubBut, NavA, NavI } from './components/Home.elements';
+import { NavDiv, NavSearchDiv, NavSubDiv, NavInp, NavBut, NavSubBut, NavA } from './components/Nav.elements'
+import { Img, AlignedDiv } from './components/Body.elements'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
@@ -17,16 +18,18 @@ function App() {
       
       <NavSubDiv>
         <NavSubBut><NavA href="https://in.bookmyshow.com/explore/movies-vita">Movies</NavA></NavSubBut>
-        <NavSubBut><NavA href="https://in.bookmyshow.com/explore/movies-vita">Stream</NavA></NavSubBut>
-        <NavSubBut><NavA href="https://in.bookmyshow.com/explore/movies-vita">Events</NavA></NavSubBut>
-        <NavSubBut><NavA href="https://in.bookmyshow.com/explore/movies-vita">Plays</NavA></NavSubBut>
-        <NavSubBut><NavA href="https://in.bookmyshow.com/explore/movies-vita">Sports</NavA></NavSubBut>
-        <NavSubBut><NavA href="https://in.bookmyshow.com/explore/movies-vita">Activities</NavA></NavSubBut>
-        <NavSubBut><NavA href="https://in.bookmyshow.com/explore/movies-vita">Buzz</NavA></NavSubBut>
+        <NavSubBut><NavA href="https://in.bookmyshow.com/explore/c/stream">Stream</NavA></NavSubBut>
+        <NavSubBut><NavA href="https://in.bookmyshow.com/explore/events-vita">Events</NavA></NavSubBut>
+        <NavSubBut><NavA href="https://in.bookmyshow.com/explore/plays-vita">Plays</NavA></NavSubBut>
+        <NavSubBut><NavA href="https://in.bookmyshow.com/explore/sports-vita">Sports</NavA></NavSubBut>
+        <NavSubBut><NavA href="https://in.bookmyshow.com/explore/activities-vita">Activities</NavA></NavSubBut>
+        <NavSubBut><NavA href="https://in.bookmyshow.com/buzz">Buzz</NavA></NavSubBut>
       </NavSubDiv>
       
-      <NavI src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/lead-in-v3-collection-202102040828.png" alt="#" />
-      
+      <Img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/lead-in-v3-collection-202102040828.png" alt="#" />
+      <AlignedDiv>
+        The Best of Entertainment
+      </AlignedDiv>
     </div>
   );
 }
