@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const NavDiv = styled.div`
   background: rgb(51, 53, 69);
@@ -7,6 +8,18 @@ export const NavDiv = styled.div`
   display: flex;
   padding-left: 10%;
   align-items: center;
+`;
+
+export const NavSearchDiv = styled.div`
+  background: white;
+  display: flex;
+  border-radius: 5px;
+  border: none;
+  height: 50%;
+  width: 40%;
+  margin-left: 1%;
+  border: none;
+  align-content: center;
 `;
 
 export const NavSubDiv = styled.div`
@@ -24,11 +37,10 @@ export const NavA = styled.a`
 `;
 
 export const NavInp = styled.input`
-  border-radius: 5px;
   border: none;
-  height: 50%;
-  width: 40%;
-  margin-left: 1%;
+  height: 90%;
+  width: 90%;
+  margin-right: 5px;
 `;
 
 export const NavBut = styled.button`
