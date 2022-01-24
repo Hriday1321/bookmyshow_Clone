@@ -1,5 +1,5 @@
 import { NavDiv, NavSearchDiv, NavSubDiv, NavInp, NavBut, NavSubBut, NavA } from './components/Nav.elements'
-import { Img, AlignedDiv } from './components/Body.elements'
+import { Img, AlignedDiv, Text } from './components/Body.elements'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
@@ -28,7 +28,7 @@ function App() {
       
       <Img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/lead-in-v3-collection-202102040828.png" alt="#" />
       <AlignedDiv>
-        The Best of Entertainment
+        <Text>The Best of Entertainment</Text>
       </AlignedDiv>
     </div>
   );
