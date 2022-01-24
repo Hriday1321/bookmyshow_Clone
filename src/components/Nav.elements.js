@@ -39,6 +39,7 @@ export const NavInp = styled.input`
   border: none;
   height: 90%;
   width: 90%;
+  outline: none;
   margin-right: 5px;
 `;
 
