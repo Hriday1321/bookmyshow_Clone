@@ -1,0 +1,21 @@
+img{
+    border-radius: 10px;
+}
+
+.rec.rec-arrow-left{
+    background: #666 !important;
+    color: white;
+    margin: 0 -4% 0 -2%;
+    z-index: 999;
+}
+
+.rec.rec-arrow-right{
+    background: #666 !important;
+    color: white;
+    margin: 0 0 0 -4%;
+    z-index: 999;
+}
+
+.rec.rec-arrow:disabled {
+    visibility: hidden;
+}
