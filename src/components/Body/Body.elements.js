@@ -42,3 +42,16 @@ export const AltText = styled.div`
     font-size: 1.5em;
     font-weight: 600;
 `;
+
+export const StyledP = styled.p`
+    color: red;
+    font-size: 0.6em;
+    font-weight: 400;
+`;
+
+export const StyledP2 = styled.p`
+    color: white;
+    font-size: 0.8em;
+    font-weight: 400;
+    font-family: Roboto,sans-serif;
+`;
