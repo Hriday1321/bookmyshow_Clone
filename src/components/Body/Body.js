@@ -1,5 +1,6 @@
 import MyCarousel from "./../Carousel/MyCarousel";
-import { Img, AlignedDiv, Text, AltDiv, AltText } from './Body.elements';
+import Carousel2 from "./../Carousel/Carousel2";
+import { Img, AlignedDiv, Text, AltDiv, AltText, StyledP, StyledP2 } from './Body.elements';
 
 function Body() {
     return(
@@ -15,8 +16,10 @@ function Body() {
             <img width="100%" src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/premiere-rupay-banner-web-collection-202104230555.png" alt="#" />
             <AltText>
               <p>Premieres</p>
-              <p>See more</p>
+              <StyledP>See more</StyledP>
             </AltText>
+            <StyledP2>Brand new releases every Friday</StyledP2>
+            <Carousel2 />
           </AltDiv>
         </>
     );
