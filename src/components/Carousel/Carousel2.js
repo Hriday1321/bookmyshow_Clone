@@ -1,6 +1,6 @@
 import Carousel from "react-elastic-carousel";
 import { Item } from "./Carousel.elements";
-import "./carousel.css";
+import "./style/carousel.css";
 
 const breakPoints = [{ width: 1200, itemsToShow: 5, itemsToScroll: 5, pagination: false, itemPadding: [0,0,0,0]}];
 
