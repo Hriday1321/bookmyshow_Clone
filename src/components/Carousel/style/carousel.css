@@ -2,6 +2,11 @@ img{
     border-radius: 10px;
 }
 
+a{
+    font-size: 0.5em;
+    color: #ddd;
+}
+
 .rec.rec-arrow-left{
     background: #666 !important;
     color: white;
