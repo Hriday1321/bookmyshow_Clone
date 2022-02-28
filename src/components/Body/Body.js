@@ -1,4 +1,4 @@
-import MyCarousel from "./../Carousel/MyCarousel";
+import MyCarousel from "./../Carousel/Carousel1";
 import Carousel2 from "./../Carousel/Carousel2";
 import { Img, AlignedDiv, Text, AltDiv, AltText, StyledP, StyledP2 } from './Body.elements';
 
