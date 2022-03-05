@@ -1,10 +1,14 @@
-img{
+img {
     border-radius: 10px;
 }
 
 a{
     font-size: 20%;
     color: #ddd;
+}
+
+.poster{
+    height: 25%;
 }
 
 .rec.rec-arrow-left{
