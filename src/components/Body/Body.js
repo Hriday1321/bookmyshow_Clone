@@ -2,7 +2,7 @@ import MyCarousel from "./../Carousel/Carousel1";
 import Carousel2 from "./../Carousel/Carousel2";
 import { Img, AlignedDiv, Text, AltDiv, AltText, StyledP, StyledP2 } from './Body.elements';
 
-function Body() {
+function Body(props) {
     return(
         <>
           <Img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/lead-in-v3-collection-202102040828.png" alt="#" />
@@ -19,7 +19,7 @@ function Body() {
               <StyledP>See more</StyledP>
             </AltText>
             <StyledP2>Brand new releases every Friday</StyledP2>
-            <Carousel2 />
+            <Carousel2 movies={props.movies}/>
           </AltDiv>
         </>
     );
