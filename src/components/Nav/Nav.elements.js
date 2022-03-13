@@ -33,6 +33,7 @@ export const NavA = styled.a`
   text-decoration: none;
   color: rgb(204, 204, 195);
   font-weight: 500;
+  font-size: 1em;
 `;
 
 export const NavInp = styled.input`
