@@ -1,12 +1,24 @@
 import Carousel from "react-elastic-carousel";
 import { Item } from "./Carousel.elements";
 import "./style/carousel.css";
+import axios from "axios";
+import React from "react";
+
+const baseURL = "https://www.omdbapi.com/?apikey=298f6e5e&s=batman";
 
 const breakPoints = [{ width: 500, itemsToShow: 3, itemsToScroll: 3, pagination: false, itemPadding: [0,0,0,0]},{ width: 1200, itemsToShow: 5, itemsToScroll: 5, pagination: false, itemPadding: [0,0,0,0]}];
 
 function MyCarousel() {
+    const [post, setPost] = React.useState({body: "default"});
+
+  React.useEffect(() => {
+    axios.get(baseURL).then((response) => {
+      setPost(response.data.Search[0]);
+    });
+  }, []);
     return(
         <>
+            <p>{post["Title"]}</p>
             <Carousel breakPoints={breakPoints}>
               <Item> 
                 <a href="https://in.bookmyshow.com/explore/workshops-vita?referrerBase=">
