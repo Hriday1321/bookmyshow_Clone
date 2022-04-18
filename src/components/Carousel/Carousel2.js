@@ -11,7 +11,7 @@ function MyCarousel(props) {
               {props.movies.map((movie, index) => (
         				<Item> 
                   <a href="https://in.bookmyshow.com/vita/movies/irresistible/ET00301307">
-                    <img src={movie.Poster} alt={movie.Title} width="100%" height="100%" /> 
+                    <img src={movie.Poster} alt={movie.Title} width="100%" height="300px" /> 
                   </a>
                 </Item>
         			))}
