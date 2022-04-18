@@ -4,20 +4,22 @@ import Nav from './components/Nav/Nav';
 import Body from './components/Body/Body';
 import Footer from './components/Footer/Footer';
 
-const baseURL = "https://www.omdbapi.com/?apikey=298f6e5e&s=batman";
-
 function App() { 
   const [post, setPost] = React.useState([]);
+  const [searchValue, setSearchValue] = React.useState('batman');
 
   React.useEffect(() => {
-    axios.get(baseURL).then((response) => {
-      setPost(response.data.Search);
+    const url = 'https://www.omdbapi.com/?apikey=298f6e5e&s=' + searchValue;
+    axios.get(url).then((response) => {
+      if (response.data.Search) {
+			setPost(response.data.Search);
+		}
     });
-  }, []);
+  }, [searchValue]);
   
   return (
     <div className="App">
-      <Nav />
+      <Nav searchValue={searchValue} setSearchValue={setSearchValue} />
       <Body movies={post}/>
       <Footer />
     </div>
